@@ -11,6 +11,19 @@
         <title>Activebox</title>
     </head>
     <body>
+        <!-- Sprite -->
+        <svg style="display: none;">
+            <symbol id="facebook" viewBox="0 0 24 24">
+                <path d="M14,6h3a1,1,0,0,0,1-1V3a1,1,0,0,0-1-1H14A5,5,0,0,0,9,7v3H7a1,1,0,0,0-1,1v2a1,1,0,0,0,1,1H9v7a1,1,0,0,0,1,1h2a1,1,0,0,0,1-1V14h2.22a1,1,0,0,0,1-.76l.5-2a1,1,0,0,0-1-1.24H13V7A1,1,0,0,1,14,6Z" ></path>
+                    <!--style="fill: rgb(0, 0, 0);"--> <!--Если внутри Спрайта свг есть атрибут fill, то он мешает css атрибуту перезаливать цвет--> 
+            </symbol>
+            <symbol id="twitter" viewBox="0 0 32 32">
+                <path d="M30.917 6.728c-1.026 0.465-2.217 0.805-3.464 0.961l-0.061 0.006c1.268-0.771 2.222-1.952 2.687-3.354l0.013-0.044c-1.124 0.667-2.431 1.179-3.82 1.464l-0.082 0.014c-1.123-1.199-2.717-1.946-4.485-1.946-3.391 0-6.14 2.749-6.14 6.14 0 0.496 0.059 0.979 0.17 1.441l-0.008-0.042c-5.113-0.254-9.613-2.68-12.629-6.366l-0.025-0.031c-0.522 0.873-0.831 1.926-0.831 3.052 0 0.013 0 0.026 0 0.039v-0.002c0 0.001 0 0.003 0 0.005 0 2.12 1.075 3.989 2.709 5.093l0.022 0.014c-1.026-0.034-1.979-0.315-2.811-0.785l0.031 0.016v0.075c0 0.001 0 0.002 0 0.002 0 2.961 2.095 5.434 4.884 6.014l0.040 0.007c-0.484 0.135-1.040 0.212-1.614 0.212-0.406 0-0.802-0.039-1.186-0.113l0.039 0.006c0.813 2.459 3.068 4.212 5.739 4.264l0.006 0c-2.072 1.638-4.721 2.627-7.602 2.627-0.005 0-0.009 0-0.014 0h0.001c-0.515-0.001-1.022-0.031-1.521-0.089l0.061 0.006c2.663 1.729 5.92 2.757 9.418 2.757 0.005 0 0.009 0 0.014 0h-0.001c0.037 0 0.082 0 0.126 0 9.578 0 17.343-7.765 17.343-17.343 0-0.039-0-0.077-0-0.116l0 0.006c0-0.262 0-0.524-0.019-0.786 1.21-0.878 2.229-1.931 3.042-3.136l0.028-0.044z"></path>
+            </symbol>
+            <symbol id="linkedin" viewBox="0 0 32 32">
+                <path d="M28.778 1.004h-25.56c-0.008-0-0.017-0-0.027-0-1.199 0-2.172 0.964-2.186 2.159v25.672c0.014 1.196 0.987 2.161 2.186 2.161 0.010 0 0.019-0 0.029-0h25.555c0.008 0 0.018 0 0.028 0 1.2 0 2.175-0.963 2.194-2.159l0-0.002v-25.67c-0.019-1.197-0.994-2.161-2.195-2.161-0.010 0-0.019 0-0.029 0h0.001zM9.9 26.562h-4.454v-14.311h4.454zM7.674 10.293c-1.425 0-2.579-1.155-2.579-2.579s1.155-2.579 2.579-2.579c1.424 0 2.579 1.154 2.579 2.578v0c0 0.001 0 0.002 0 0.004 0 1.423-1.154 2.577-2.577 2.577-0.001 0-0.002 0-0.003 0h0zM26.556 26.562h-4.441v-6.959c0-1.66-0.034-3.795-2.314-3.795-2.316 0-2.669 1.806-2.669 3.673v7.082h-4.441v-14.311h4.266v1.951h0.058c0.828-1.395 2.326-2.315 4.039-2.315 0.061 0 0.121 0.001 0.181 0.003l-0.009-0c4.5 0 5.332 2.962 5.332 6.817v7.855z"></path>
+            </symbol>
+        </svg>
         <!-- Header -->
         <header class="header">
         <div class="container">
@@ -101,7 +114,209 @@
                     <div class="works__text">User Interface Design</div>
                 </div>
             </div>
-        </div>
+            <div class="works__item">
+                <img class="works__photo" src="/images/works/fon2.jpg" alt="">
+                <div class="works__content">
+                    <div class="works__title">Project Name</div>
+                    <div class="works__text">User Interface Design</div>
+                </div>
+            </div>
+            <div class="works__item">
+                <img class="works__photo" src="/images/works/fon3.jpg" alt="">
+                <div class="works__content">
+                    <div class="works__title">Project Name</div>
+                    <div class="works__text">User Interface Design</div>
+                </div>
+            </div>
+            <div class="works__item">
+                <img class="works__photo" src="/images/works/fon4.jpg" alt="">
+                <div class="works__content">
+                    <div class="works__title">Project Name</div>
+                    <div class="works__text">User Interface Design</div>
+                </div>
+            </div>
+            <div class="works__item">
+                <img class="works__photo" src="/images/works/fon5.jpg" alt="">
+                <div class="works__content">
+                    <div class="works__title">Project Name</div>
+                    <div class="works__text">User Interface Design</div>
+                </div>
+            </div>
+            <div class="works__item">
+                <img class="works__photo" src="/images/works/fon6.jpg" alt="">
+                <div class="works__content">
+                    <div class="works__title">Project Name</div>
+                    <div class="works__text">User Interface Design</div>
+                </div>
+            </div>
+            <div class="works__item">
+                <img class="works__photo" src="/images/works/fon7.jpg" alt="">
+                <div class="works__content">
+                    <div class="works__title">Project Name</div>
+                    <div class="works__text">User Interface Design</div>
+                </div>
+            </div>
+            <div class="works__item">
+                <img class="works__photo" src="/images/works/fon8.jpg" alt="">
+                <div class="works__content">
+                    <div class="works__title">Project Name</div>
+                    <div class="works__text">User Interface Design</div>
+                </div>
+            </div>
+        </div> <!--./Works-->
+        <!-- Team -->
+        <div class="team">
+            <div class="container">
+                <div class="team__inner">
+                    <div class="team__item">
+                        <img class="team__photo" src="/images/team/1.jpg" alt="">
+                        <div class="team__name">Ruth Woods</div>
+                        <div class="team__prof">Founder, CEO</div>
+                        <div class="team__text">
+                            <p>Fusce dapibus, tellus ac cursus commodo,
+                             tortor mauris condimentum nibh, 
+                             ut fermentum massa justo sit amet risus.</p>
+                             <p>Maecenas sed diam eget risus varius blandit
+                            sit amet non magna. 
+                            Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+                        </div>
+                        <div class="social"> <!--Если использовать image иконки, то нельзя при наводе изменять их цвет-->
+                            <a class="social__item" href="#" target="_blank">
+                                <!-- <img src="/images/social/facebook.svg" height="18" alt=""> -->
+                                <svg class="social__icon">
+                                    <use xlink:href="#facebook"></use>
+                                </svg>
+                            </a>
+                            <a class="social__item" href="#" target="_blank">
+                                <!-- <img src="/images/social/facebook.svg" height="18" alt=""> -->
+                                <svg class="social__icon">
+                                    <use xlink:href="#twitter"></use>
+                                </svg>
+                            </a>
+                            <a class="social__item" href="#" target="_blank">
+                                <!-- <img src="/images/social/facebook.svg" height="18" alt=""> -->
+                                <svg class="social__icon">
+                                    <use xlink:href="#linkedin"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="team__item">
+                        <img class="team__photo" src="/images/team/2.jpg" alt="">
+                        <div class="team__name">Timothy Reed</div>
+                        <div class="team__prof">Co-Founder, Developer</div>
+                        <div class="team__text">
+                            <p>Fusce dapibus, tellus ac cursus commodo,
+                             tortor mauris condimentum nibh, 
+                             ut fermentum massa justo sit amet risus.</p>
+                             <p>Maecenas sed diam eget risus varius blandit
+                            sit amet non magna. 
+                            Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+                        </div>
+                        <div class="social"> <!--Если использовать image иконки, то нельзя при наводе изменять их цвет-->
+                            <a class="social__item" href="#" target="_blank">
+                                <!-- <img src="/images/social/facebook.svg" height="18" alt=""> -->
+                                <svg class="social__icon">
+                                    <use xlink:href="#facebook"></use>
+                                </svg>
+                            </a>
+                            <a class="social__item" href="#" target="_blank">
+                                <!-- <img src="/images/social/facebook.svg" height="18" alt=""> -->
+                                <svg class="social__icon">
+                                    <use xlink:href="#twitter"></use>
+                                </svg>
+                            </a>
+                            <a class="social__item" href="#" target="_blank">
+                                <!-- <img src="/images/social/facebook.svg" height="18" alt=""> -->
+                                <svg class="social__icon">
+                                    <use xlink:href="#linkedin"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="team__item">
+                        <img class="team__photo" src="/images/team/3.jpg" alt="">
+                        <div class="team__name">Victoria Valdez</div>
+                        <div class="team__prof">UI Designer</div>
+                        <div class="team__text">
+                            <p>Fusce dapibus, tellus ac cursus commodo,
+                             tortor mauris condimentum nibh, 
+                             ut fermentum massa justo sit amet risus.</p>
+                             <p>Maecenas sed diam eget risus varius blandit
+                            sit amet non magna. 
+                            Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+                        </div>
+                        <div class="social"> <!--Если использовать image иконки, то нельзя при наводе изменять их цвет-->
+                            <a class="social__item" href="#" target="_blank">
+                                <!-- <img src="/images/social/facebook.svg" height="18" alt=""> -->
+                                <svg class="social__icon">
+                                    <use xlink:href="#facebook"></use>
+                                </svg>
+                            </a>
+                            <a class="social__item" href="#" target="_blank">
+                                <!-- <img src="/images/social/facebook.svg" height="18" alt=""> -->
+                                <svg class="social__icon">
+                                    <use xlink:href="#twitter"></use>
+                                </svg>
+                            </a>
+                            <a class="social__item" href="#" target="_blank">
+                                <!-- <img src="/images/social/facebook.svg" height="18" alt=""> -->
+                                <svg class="social__icon">
+                                    <use xlink:href="#linkedin"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="team__item">
+                        <img class="team__photo" src="/images/team/4.jpg" alt="">
+                        <div class="team__name">Beverly Little</div>
+                        <div class="team__prof">Data Scientist</div>
+                        <div class="team__text">
+                            <p>Fusce dapibus, tellus ac cursus commodo,
+                             tortor mauris condimentum nibh, 
+                             ut fermentum massa justo sit amet risus.</p>
+                             <p>Maecenas sed diam eget risus varius blandit
+                            sit amet non magna. 
+                            Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+                        </div>
+                        <div class="social"> <!--Если использовать image иконки, то нельзя при наводе изменять их цвет-->
+                            <a class="social__item" href="#" target="_blank">
+                                <!-- <img src="/images/social/facebook.svg" height="18" alt=""> -->
+                                <svg class="social__icon">
+                                    <use xlink:href="#facebook"></use>
+                                </svg>
+                            </a>
+                            <a class="social__item" href="#" target="_blank">
+                                <!-- <img src="/images/social/facebook.svg" height="18" alt=""> -->
+                                <svg class="social__icon">
+                                    <use xlink:href="#twitter"></use>
+                                </svg>
+                            </a>
+                            <a class="social__item" href="#" target="_blank">
+                                <!-- <img src="/images/social/facebook.svg" height="18" alt=""> -->
+                                <svg class="social__icon">
+                                    <use xlink:href="#linkedin"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div> <!--team__inner-->
+            </div> <!--container-->
+        </div> <!--/.team-->
+        <!--Testimonials-->
+            <div class="reviews">
+                <div class="container">
+                    <div class="reviews__item">
+                        <div class="reviews__photo">
+                            <img class="reviews__img" src="/images/reviews/review-1.jpg" alt="">
+                        </div>
+                        <div class="reviews__content">
+                            <div class="reviews__text">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”</div>
+                            <div class="reviews__author">Susan Sims, Interaction Designer at XYZ</div>
+                        </div>
+                    </div>
+                </div> <!--./container-->
+            </div> <!--reviews__content-->
 
-    </body>
+     </body>
 </html>
