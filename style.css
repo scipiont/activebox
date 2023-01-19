@@ -74,8 +74,9 @@ p {
     justify-content: center;
     height: 750px;
     padding-top: 100px;
-    background: #31344e url("images/intro-bg.jpg") no-repeat center / cover;
-    
+    /* background: #31344e url("images/intro-bg.jpg") no-repeat center / cover; */
+    background: #31344e url("images/intro-bg.jpg") no-repeat center;
+    background-size: cover;
 }
 .intro__inner{
     width: 100%;
@@ -116,6 +117,7 @@ p {
     font-weight: 600;
     text-transform: uppercase;
     text-decoration: none;
+    text-align: center;
     transition: background .1s linear;
 }
 .btn--red{
@@ -123,6 +125,9 @@ p {
 }
 .btn--red:hover{
     background-color: #9c2e2e;
+}
+ .btn--long{        
+    min-width: 280px;  /*Модификатор для удлиннеия второй кнопки */
 }
 
 /*Features*/
@@ -249,6 +254,10 @@ p {
 .social{
     display: flex;
 }
+.social--footer{
+    justify-content: center;
+
+}
 .social__item{
     display: flex;
     justify-content: center;
@@ -267,11 +276,24 @@ p {
 .social__item:hover .social__icon{
     fill: #e84545;
 }
+.social--footer .social__item{
+    background-color: transparent;
+    border-width: 2px;
+    border-color: #fff;
+    border-radius: 2px;
+
+}
+.social--footer .social__item:hover{
+    background-color: #fff;
+}
 .social__icon{
     display: block;
     height: 18px;
     fill: #c6cacc;
     transition: fill .1s linear;
+}
+.social--footer .social__icon{
+     fill: #fff;
 }
 
 /* Reviews */
@@ -316,4 +338,79 @@ p {
     color: #fff;
     font-weight: 700;
     text-transform: uppercase;
+}
+
+/* Download */
+
+.download{
+    margin: 90px 0;
+    text-align: center;
+}
+.download__title {
+    margin-bottom: 10px;
+    font-size: 28px;
+    font-weight: 300;
+    color: #2d3033;
+}
+.download__text{
+    margin-bottom: 30px;
+    font-size: 13px;
+    color: #2d3033;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+/* Footer */
+
+ .footer{
+    
+    background-color: #3a3e64;
+}
+.footer__inner{
+    padding: 70px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer__block{
+     width: 33.3333%; 
+     padding: 0 15px;
+    text-align: center;
+}
+.footer__title{
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    color: #fff;
+} 
+
+.footer__address{
+    font-size: 14px;
+    font-style: normal;
+    color: rgba(255, 255, 255, .5);
+    line-height: 1.5;
+}
+.footer__text{
+    font-size: 14px;
+    font-style: normal;
+    color: rgba(255, 255, 255, .5);
+    line-height: 1.5;
+}
+
+/* Copyright */
+.copyright{
+    background-color: #313454;
+    padding: 20px 0;
+}
+.copyright__text{
+    text-align: center;
+    color: #808080;
+    font-size: 14px;
+    line-height: 1.5;
+}
+.copyright__text span{
+    color: #fff;
+}
+.heart{
+    width: 11px;
+    height: 11px;
 }
