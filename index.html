@@ -9,6 +9,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
         <title>Activebox</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     </head>
     <body>
         <!-- Sprite -->
@@ -25,7 +26,7 @@
             </symbol>
         </svg>
         <!-- Header -->
-        <header class="header">
+        <header class="header" id="header">
         <div class="container">
             <div class="header__inner">
                 <div class="header__logo">
@@ -39,7 +40,11 @@
                     <a href="#" class="nav__link">Testimonials</a>
                     <a href="#" class="nav__link">Download</a>
                 </nav>
+                 <button class="burger" type="button">
+                    <span class="burger__item">Menu</span>
+                </button>
             </div>
+           
 
         </div>
 
@@ -379,6 +384,8 @@
                     </div>
                 </div>
             </footer>
+            <!-- Jquery -->
+            <script src="app.js"></script>
 
      </body>
 </html>
