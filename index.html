@@ -1,13 +1,29 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
         <link href="https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Open+Sans:wght@700&family=Raleway:wght@300;400;600;700&display=swap" rel="stylesheet">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+        <link rel="manifest" href="images/favicon/site.webmanifest">
+        <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+
+        
         <link rel="stylesheet" href="style.css">
+
+        <meta name="description" content="Создаем сайты на заказ">
+        <meta name="keywords" content="Сайты,заказы на сайты,создаем сайты,верстка сайтов">
+        <meta name="google" content="notranslate">
         <title>Activebox</title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     </head>
@@ -30,17 +46,17 @@
         <div class="container">
             <div class="header__inner">
                 <div class="header__logo">
-                    <img src="images/ActiveBox-logo.png" alt="Логотип сайта">
+                    <img src="images/MG.png" alt="Логотип сайта">
                 </div>
                 
-                <nav class="nav">
+                <nav class="nav" id="nav">
                     <a href="#" class="nav__link" data-sroll="#features">Features</a>
                     <a href="#" class="nav__link" data-sroll="#works">Works</a>
                     <a href="#" class="nav__link" data-sroll="#team">Our Team</a>
                     <a href="#" class="nav__link" data-sroll="#reviews">Testimonials</a>
                     <a href="#" class="nav__link" data-sroll="#download">Download</a>
                 </nav>
-                 <button class="burger" type="button">
+                 <button class="burger" type="button" id="navToggle">
                     <span class="burger__item">Menu</span>
                 </button>
             </div>
@@ -311,13 +327,28 @@
         <!--Testimonials-->
             <div class="reviews" id="reviews">
                 <div class="container">
-                    <div class="reviews__item">
-                        <div class="reviews__photo">
-                            <img class="reviews__img" src="./images/reviews/review-1.jpg" alt="">
+                    <div class="reviews__slider" id="reviewsSlider">
+                        <div class="slick-item">
+                            <div class="reviews__item">
+                                <div class="reviews__photo">
+                                    <img class="reviews__img" src="./images/reviews/review-1.jpg" alt="">
+                                </div>
+                                <div class="reviews__content">
+                                    <div class="reviews__text">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”</div>
+                                    <div class="reviews__author">Susan Sims, Interaction Designer at XYZ</div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="reviews__content">
-                            <div class="reviews__text">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”</div>
-                            <div class="reviews__author">Susan Sims, Interaction Designer at XYZ</div>
+                        <div class="slick-item">
+                            <div class="reviews__item">
+                                <div class="reviews__photo">
+                                    <img class="reviews__img" src="./images/reviews/review-1.jpg" alt="">
+                                </div>
+                                <div class="reviews__content">
+                                    <div class="reviews__text">“lipsum  sdsdfs sdfsdfsdf sdfsdfsdfsdf”</div>
+                                    <div class="reviews__author">Crown People, Director</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div> <!--./container-->
@@ -385,6 +416,7 @@
                 </div>
             </footer>
             <!-- Jquery -->
+            <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
             <script src="app.js"></script>
 
      </body>

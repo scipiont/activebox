@@ -85,7 +85,7 @@ p {
     height: 750px;
     padding-top: 100px;
     /* background: #31344e url("images/intro-bg.jpg") no-repeat center / cover; */
-    background: #31344e url("images/intro-bg.jpg") no-repeat center;
+    background: #31344e url("images/bg.jpg") no-repeat center;
     background-size: cover;
    
 }
@@ -314,9 +314,17 @@ p {
     background-color: #53354a;
 
 }
+.reviews__slider{
+   
+    overflow: hidden;
+}
+.reviews__slider .slick-initialized{
+    height: auto;
+}
 .reviews__item{
     display: flex;
     flex-wrap: wrap;
+    overflow: hidden;
 }
 .reviews__photo{
     width: 50%;
@@ -328,8 +336,8 @@ p {
     position: absolute; 
     top: 50%;
    
-    /* right: 0; */
-    min-width: 1150px;
+    right: 0;
+    /* min-width: 1150px; */
    
     z-index: 1;
     transform: translateY(-50%);
@@ -354,6 +362,39 @@ p {
     color: #fff;
     font-weight: 700;
     text-transform: uppercase;
+}
+.slick-dots{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0 0 10px;
+    list-style: none;
+    width: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+}
+.slick-dots li{
+    margin: 0 5px;
+}
+.slick-dots button {
+    background: #fff;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    opacity: 0.5;
+    border: 0;
+    padding: 0;
+    font-size: 0;
+    color: transparent;
+    cursor: pointer;
+}
+.slick-dots .slick-active button{
+    opacity: 1;
+}
+.slick-dots button:focus{
+    outline: 0;
 }
 
 /* Download */
@@ -480,6 +521,19 @@ p {
     /* nav */
     .nav{
         display: none;
+        width: 100%;
+        text-align: right;
+        position: absolute;
+        right: 0;
+        top: 100%;
+        flex-direction: column;
+        background-color: #131744;
+    }
+    .nav.show{
+        display: flex;
+    }
+    .nav__link{
+        padding: 9px 15px;
     }
     /* Burger */
     .burger{
