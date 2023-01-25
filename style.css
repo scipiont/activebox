@@ -36,6 +36,15 @@ p {
     left: 0;
     z-index: 1000;
 }
+.header.fixed{
+    height: auto;
+    position: fixed;
+    background-color: #31344e
+}
+.header.fixed .header__inner{
+    padding: 15px 0;
+    border-bottom: 0;
+}
 .header__inner{
     padding: 35px 0px; /*Внутренние отступы элементов*/
     display: flex;
@@ -313,11 +322,15 @@ p {
     width: 50%;
     height: 500px;
     position: relative;
+    
 }
 .reviews__img{
-    position: absolute;
+    position: absolute; 
     top: 50%;
-    right: 0;
+   
+    /* right: 0; */
+    min-width: 1150px;
+   
     z-index: 1;
     transform: translateY(-50%);
 }
@@ -326,7 +339,7 @@ p {
     flex-direction: column;
     justify-content: center;
     width: 50%;
-    padding-left: 80px;
+    padding-left: 180px;
 }
 .reviews__text{
     margin-bottom: 25px;
@@ -487,7 +500,7 @@ p {
     }
     .team__photo{
         margin-left: auto;
-        margin-right: auto;
+        margin-right: auto; 
     }
     /* Social */
     .social{
@@ -504,10 +517,10 @@ p {
         padding-left: 0;
         padding-bottom: 15px;
     }
-    /* .reviews__img{
+    .reviews__img{
         min-width: 991px;
         right: -15px; 
-    } */
+    } 
 }
 @media (max-width: 767px){
     .intro{
